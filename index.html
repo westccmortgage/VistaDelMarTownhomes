@@ -75,17 +75,17 @@
       <div class="wrap">
         <div class="section-head"><p class="eyebrow">03 — Site Plan</p><h2>Clear site separation: rebuild clusters and intact clusters.</h2></div>
         <figure class="site-plan-figure">
-          <div class="plan-sprite plan-sprite--site" role="img" aria-label="Presentation redraw of Vista Del Mar site status showing total-loss clusters 1 through 3 and intact clusters 4 and 5"></div>
-          <figcaption>Web presentation redraw based on original project records. For orientation and public project overview only; not a construction document.</figcaption>
+          <div class="sprite-frame sprite-frame--site plan-clickmap">
+            <img src="/assets/plans-sprite.webp" alt="Vista Del Mar site status and clear site separation plan" />
+            <button class="cluster-pin rebuild c1" type="button" data-plan="clusters" data-title="Cluster 1 — Rebuild" data-copy="1900–1914 Palisades Drive · 8 fire-loss residences">Cluster 1</button>
+            <button class="cluster-pin rebuild c2" type="button" data-plan="clusters" data-title="Cluster 2 — Rebuild" data-copy="1922–1932 Palisades Drive · 6 fire-loss residences">Cluster 2</button>
+            <button class="cluster-pin rebuild c3" type="button" data-plan="clusters" data-title="Cluster 3 — Rebuild" data-copy="1916–1920 Palisades Drive · 3 fire-loss residences">Cluster 3</button>
+            <button class="cluster-pin intact c4" type="button" data-plan="site" data-title="Cluster 4 — Intact" data-copy="1934–1940 Palisades Drive · existing residences outside the primary rebuild scope">Cluster 4</button>
+            <button class="cluster-pin intact c5" type="button" data-plan="site" data-title="Cluster 5 — Intact" data-copy="1942–1948 Palisades Drive · existing residences outside the primary rebuild scope">Cluster 5</button>
+          </div>
+          <figcaption>Click a cluster to review its status and plan context. Presentation redraw based on original project records; not a construction document.</figcaption>
         </figure>
         <p class="section-note">The site separation identifies 1900–1932 as the 17-unit total-loss reconstruction scope and 1934–1948 as the 8 intact existing units.</p>
-        <div class="cluster-grid cluster-grid-wide">
-          <article class="cluster rebuild"><span>Total Loss</span><h3>Cluster 1</h3><p>1900 · 1902 · 1904 · 1906 · 1908 · 1910 · 1912 · 1914</p></article>
-          <article class="cluster rebuild"><span>Total Loss</span><h3>Cluster 2</h3><p>1922 · 1924 · 1926 · 1928 · 1930 · 1932</p></article>
-          <article class="cluster rebuild"><span>Total Loss</span><h3>Cluster 3</h3><p>1916 · 1918 · 1920</p></article>
-          <article class="cluster intact"><span>Intact</span><h3>Cluster 4</h3><p>1934 · 1936 · 1938 · 1940 · 1942</p></article>
-          <article class="cluster intact"><span>Intact</span><h3>Cluster 5</h3><p>1944 · 1946 · 1948</p></article>
-        </div>
       </div>
     </section>
 
@@ -113,12 +113,12 @@
       <div class="wrap">
         <div class="section-head"><p class="eyebrow">06 — Documentation</p><h2>Original architectural documentation supports the rebuild.</h2><p>The available historical building-plan package includes site plans, grading, drainage, sewer and water plans, cluster floor plans, roof plans, exterior elevations, sections, foundation plans, framing plans, schedules and details.</p></div>
         <div class="doc-gallery">
-          <article class="doc-card"><div class="plan-sprite plan-sprite--site"></div><h3>Site Status / Site Plan</h3><p>Clear separation of the 17 total-loss units and 8 intact residences.</p></article>
-          <article class="doc-card"><div class="plan-sprite plan-sprite--clusters"></div><h3>Cluster Plans</h3><p>Public presentation of the original cluster organization and site key plan.</p></article>
-          <article class="doc-card"><div class="plan-sprite plan-sprite--floor"></div><h3>Unit Floor Plans</h3><p>Representative floor-plan documentation derived from the historical plan package.</p></article>
-          <article class="doc-card"><div class="plan-sprite plan-sprite--elev"></div><h3>Elevations</h3><p>Representative exterior elevations showing the established architectural language.</p></article>
-          <article class="doc-card"><div class="plan-sprite plan-sprite--foundation"></div><h3>Foundation / Framing</h3><p>Representative structural-plan information for project orientation.</p></article>
-          <article class="doc-card"><div class="plan-sprite plan-sprite--details"></div><h3>Details & Schedules</h3><p>Representative architectural details and schedules from the project record.</p></article>
+          <button class="doc-card doc-open" type="button" data-plan="site" data-title="Site Status / Site Plan" data-copy="Clear separation of the 17 total-loss units and 8 intact residences."><div class="sprite-frame sprite-frame--site"><img src="/assets/plans-sprite.webp" alt="" /></div><h3>Site Status / Site Plan</h3><p>Clear separation of the 17 total-loss units and 8 intact residences.</p><span class="view-label">View larger</span></button>
+          <button class="doc-card doc-open" type="button" data-plan="clusters" data-title="Cluster Plans" data-copy="Original cluster organization and site key plan."><div class="sprite-frame sprite-frame--clusters"><img src="/assets/plans-sprite.webp" alt="" /></div><h3>Cluster Plans</h3><p>Public presentation of the original cluster organization and site key plan.</p><span class="view-label">View larger</span></button>
+          <button class="doc-card doc-open" type="button" data-plan="floor" data-title="Unit Floor Plans" data-copy="Representative floor-plan documentation derived from the historical plan package."><div class="sprite-frame sprite-frame--floor"><img src="/assets/plans-sprite.webp" alt="" /></div><h3>Unit Floor Plans</h3><p>Representative floor-plan documentation derived from the historical plan package.</p><span class="view-label">View larger</span></button>
+          <button class="doc-card doc-open" type="button" data-plan="elev" data-title="Elevations" data-copy="Representative exterior elevations showing the established architectural language."><div class="sprite-frame sprite-frame--elev"><img src="/assets/plans-sprite.webp" alt="" /></div><h3>Elevations</h3><p>Representative exterior elevations showing the established architectural language.</p><span class="view-label">View larger</span></button>
+          <button class="doc-card doc-open" type="button" data-plan="foundation" data-title="Foundation / Framing" data-copy="Representative structural-plan information for project orientation."><div class="sprite-frame sprite-frame--foundation"><img src="/assets/plans-sprite.webp" alt="" /></div><h3>Foundation / Framing</h3><p>Representative structural-plan information for project orientation.</p><span class="view-label">View larger</span></button>
+          <button class="doc-card doc-open" type="button" data-plan="details" data-title="Details & Schedules" data-copy="Representative architectural details and schedules from the project record."><div class="sprite-frame sprite-frame--details"><img src="/assets/plans-sprite.webp" alt="" /></div><h3>Details & Schedules</h3><p>Representative architectural details and schedules from the project record.</p><span class="view-label">View larger</span></button>
         </div>
         <div class="notice"><strong>Original plan package is available</strong><p>The images above are presentation redraws prepared from historical project records for public website use. They demonstrate the depth of the available documentation without publishing the full plan set. Additional project materials can be provided directly when appropriate.</p></div>
       </div>
@@ -140,5 +140,22 @@
   </main>
 
   <footer><div class="wrap footer-inner"><div><strong>Vista Del Mar Townhomes</strong><span>Pacific Palisades, California</span></div><p>Concepts, areas, scope and project status remain subject to verification, design development, HOA requirements, engineering and governmental approvals.</p><span>© 2026 Vista Del Mar Townhomes.</span></div></footer>
+
+  <div class="plan-modal" id="plan-modal" aria-hidden="true">
+    <div class="plan-modal__backdrop" data-close-modal></div>
+    <div class="plan-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="plan-modal-title">
+      <button class="plan-modal__close" type="button" aria-label="Close plan viewer" data-close-modal>×</button>
+      <div class="plan-modal__visual sprite-frame sprite-frame--site" id="plan-modal-visual">
+        <img src="/assets/plans-sprite.webp" alt="" />
+      </div>
+      <div class="plan-modal__copy">
+        <p class="eyebrow">Project Plan View</p>
+        <h2 id="plan-modal-title">Site Plan</h2>
+        <p id="plan-modal-copy"></p>
+        <small>Presentation redraw based on historical project records. For orientation only; not a construction document.</small>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
