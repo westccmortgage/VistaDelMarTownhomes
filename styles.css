@@ -146,3 +146,46 @@ footer{background:var(--navy);color:white;padding:46px 0}
 .plan-detail:before{inset:28px}
 @media(max-width:1000px){.cluster-grid-wide{grid-template-columns:repeat(2,1fr)}.vision-grid{grid-template-columns:1fr}.doc-gallery{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:650px){.hero-full{min-height:700px}.hero-content{padding-top:110px;padding-bottom:100px}.doc-gallery,.vision-lists,.cluster-grid-wide{grid-template-columns:1fr}.site-plan-visual{min-height:650px}.pc1{left:6%;top:10%;width:48%}.pc2{left:8%;top:57%;width:46%}.pc3{right:5%;top:25%;width:38%}.pc4{right:5%;bottom:10%;width:40%}.pc5{left:7%;bottom:5%;width:35%}.road{top:42%;left:-5%;right:-5%}}
+
+/* Approved final Vista presentation */
+.hero-overlay{
+  background:linear-gradient(90deg,rgba(9,25,44,.10) 0%,rgba(9,25,44,.16) 43%,rgba(9,25,44,.74) 68%,rgba(9,25,44,.88) 100%),linear-gradient(0deg,rgba(9,25,44,.35),rgba(9,25,44,0) 48%);
+}
+.hero-content{
+  width:min(var(--max),calc(100% - 40px));
+  padding-left:52%;
+}
+.hero-full h1{font-size:clamp(54px,6vw,88px)}
+.hero-lede-light{max-width:610px}
+.hero-facts-dark{grid-template-columns:repeat(4,1fr);max-width:760px}
+.site-plan-figure{margin:0}
+.plan-sprite{
+  background-image:url("assets/plans-sprite.webp");
+  background-repeat:no-repeat;
+  background-size:300% 200%;
+  background-color:#f4f1e9;
+}
+.site-plan-figure .plan-sprite{
+  width:100%;
+  aspect-ratio:4/3;
+  max-height:760px;
+  border:1px solid var(--line);
+}
+.plan-sprite--site{background-position:0% 0%}
+.plan-sprite--clusters{background-position:50% 0%}
+.plan-sprite--floor{background-position:100% 0%}
+.plan-sprite--elev{background-position:0% 100%}
+.plan-sprite--foundation{background-position:50% 100%}
+.plan-sprite--details{background-position:100% 100%}
+.doc-card .plan-sprite{height:230px;border-bottom:1px solid var(--line)}
+.doc-card h3{margin-top:0}
+@media(max-width:900px){
+  .hero-content{padding-left:34%}
+  .hero-facts-dark{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:650px){
+  .hero-overlay{background:linear-gradient(0deg,rgba(9,25,44,.88),rgba(9,25,44,.35))}
+  .hero-content{padding-left:0}
+  .hero-facts-dark{grid-template-columns:repeat(2,1fr)}
+  .doc-card .plan-sprite{height:210px}
+}
