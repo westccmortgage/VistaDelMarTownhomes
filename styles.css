@@ -364,3 +364,105 @@ body.modal-open{overflow:hidden}
   .plan-modal{padding:10px}
   .plan-modal__copy{padding:20px}
 }
+
+
+/* Final direct-image fix */
+.btn-link-light{
+  background:transparent;
+  color:#fff;
+  border:0;
+  padding-left:0;
+  padding-right:0;
+  border-bottom:1px solid rgba(255,255,255,.55);
+  border-radius:0;
+}
+.btn-link-light:hover{border-bottom-color:#fff}
+
+.hero-facts-dark{
+  background:transparent !important;
+  border:0 !important;
+  backdrop-filter:none !important;
+  gap:28px !important;
+}
+.hero-facts-dark div{
+  background:transparent !important;
+  padding:0 !important;
+  border:0 !important;
+}
+.hero-facts-dark strong{font-size:clamp(42px,4vw,62px)}
+.hero-facts-dark span{display:block;margin-top:6px;font-size:13px;color:rgba(255,255,255,.82)}
+
+.step-grid{background:transparent;border:0;gap:14px}
+.step-grid article{
+  border:1px solid var(--line);
+  padding:0 18px 22px;
+  overflow:hidden;
+}
+.step-media{
+  width:calc(100% + 36px);
+  height:140px;
+  margin:0 -18px 18px;
+  object-fit:cover;
+  object-position:center;
+  background:#f3f0e8;
+  border-bottom:1px solid var(--line);
+}
+.step-grid article:nth-child(2) .step-media,
+.step-grid article:nth-child(3) .step-media{
+  object-fit:contain;
+}
+
+.plan-image-frame{
+  position:relative;
+  width:100%;
+  aspect-ratio:4/3;
+  overflow:hidden;
+  background:#f5f2ea;
+  border:1px solid var(--line);
+}
+.plan-image-frame>img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  background:#fff;
+}
+.doc-image{
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:contain;
+  background:#fff;
+  border-bottom:1px solid var(--line);
+}
+.doc-card{background:#fff}
+.doc-card:hover .doc-image{filter:contrast(1.02)}
+
+.plan-modal__visual{
+  width:100%;
+  background:#fff;
+  border-bottom:1px solid var(--line);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:320px;
+}
+.plan-modal__visual img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:72vh;
+  object-fit:contain;
+  background:#fff;
+}
+
+.plan-sprite,.sprite-frame{background:none !important}
+.plan-sprite img,.sprite-frame img{transform:none !important;width:100% !important}
+
+@media(max-width:900px){
+  .hero-facts-dark{gap:18px !important}
+  .step-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:650px){
+  .hero-facts-dark{grid-template-columns:repeat(2,1fr);gap:20px !important}
+  .step-grid{grid-template-columns:1fr}
+  .cluster-pin{font-size:8px;padding:4px 5px}
+}
