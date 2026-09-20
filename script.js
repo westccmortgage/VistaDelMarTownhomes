@@ -1,19 +1,16 @@
 (() => {
   const modal = document.getElementById('plan-modal');
-  if (!modal) return;
-
-  const visual = document.getElementById('plan-modal-visual');
+  const image = document.getElementById('plan-modal-image');
   const title = document.getElementById('plan-modal-title');
   const copy = document.getElementById('plan-modal-copy');
-  const classNames = ['site','clusters','floor','elev','foundation','details'];
+  if (!modal || !image || !title || !copy) return;
 
-  const setPlan = (plan) => {
-    classNames.forEach(name => visual.classList.remove('sprite-frame--' + name));
-    visual.classList.add('sprite-frame--' + (classNames.includes(plan) ? plan : 'site'));
-  };
+  let lastTrigger = null;
 
   const openModal = (trigger) => {
-    setPlan(trigger.dataset.plan || 'site');
+    lastTrigger = trigger;
+    image.src = trigger.dataset.image || '/assets/site-status.jpg';
+    image.alt = trigger.dataset.title || 'Vista Del Mar project plan';
     title.textContent = trigger.dataset.title || 'Project Plan';
     copy.textContent = trigger.dataset.copy || '';
     modal.classList.add('is-open');
@@ -26,9 +23,10 @@
     modal.classList.remove('is-open');
     modal.setAttribute('aria-hidden', 'true');
     document.body.classList.remove('modal-open');
+    lastTrigger?.focus();
   };
 
-  document.querySelectorAll('[data-plan]').forEach((trigger) => {
+  document.querySelectorAll('[data-image]').forEach((trigger) => {
     trigger.addEventListener('click', () => openModal(trigger));
   });
 
