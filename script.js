@@ -9,7 +9,7 @@
 
   const openModal = (trigger) => {
     lastTrigger = trigger;
-    image.src = trigger.dataset.image || '/assets/site-status.jpg';
+    image.src = trigger.dataset.image || '/assets/site-status.png';
     image.alt = trigger.dataset.title || 'Vista Del Mar project plan';
     title.textContent = trigger.dataset.title || 'Project Plan';
     copy.textContent = trigger.dataset.copy || '';
@@ -36,5 +36,12 @@
 
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+    if (event.key === 'Tab' && modal.classList.contains('is-open')) {
+      const closeButton = modal.querySelector('.plan-modal__close');
+      if (closeButton) {
+        event.preventDefault();
+        closeButton.focus();
+      }
+    }
   });
 })();
