@@ -280,6 +280,7 @@ footer{background:var(--navy);color:white;padding:46px 0}
   cursor:pointer;
 }
 .btn:focus-visible,
+.step-media-button:focus-visible,
 .cluster-pin:focus-visible,
 .doc-card:focus-visible,
 .plan-modal__close:focus-visible{
@@ -364,6 +365,27 @@ body.modal-open{overflow:hidden}
 .step-media--plan{
   object-fit:contain;
 }
+.step-media-button{
+  display:block;
+  width:calc(100% + 36px);
+  height:140px;
+  margin:0 -18px 18px;
+  padding:0;
+  border:0;
+  border-bottom:1px solid var(--line);
+  background:#fff;
+  cursor:zoom-in;
+  touch-action:manipulation;
+}
+.step-media-button .step-media{
+  width:100%;
+  height:100%;
+  margin:0;
+  border:0;
+}
+.step-media-button:hover .step-media,
+.step-media-button:focus-visible .step-media{filter:contrast(1.06)}
+.step-media-button:focus-visible{outline-offset:-4px}
 
 .plan-image-frame{
   position:relative;
