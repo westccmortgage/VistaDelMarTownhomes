@@ -5,10 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vista Del Mar Townhomes — Pacific Palisades Rebuild</title>
   <meta name="description" content="Public project overview for the reconstruction of 17 fire-loss residences within the Vista Del Mar / Headland Condominiums community in Pacific Palisades." />
+  <meta name="theme-color" content="#17314f" />
+  <link rel="canonical" href="https://vistadelmartownhomes.com/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Vista Del Mar Townhomes" />
+  <meta property="og:title" content="Vista Del Mar Townhomes — Pacific Palisades Rebuild" />
+  <meta property="og:description" content="Public project overview for the reconstruction of 17 fire-loss residences in Pacific Palisades. Shown with a conceptual rendering for illustrative purposes only." />
+  <meta property="og:url" content="https://vistadelmartownhomes.com/" />
+  <meta property="og:image" content="https://vistadelmartownhomes.com/assets/vista-del-mar-featured.webp" />
+  <meta property="og:image:width" content="1672" />
+  <meta property="og:image:height" content="941" />
+  <meta property="og:image:alt" content="Conceptual rendering of Vista Del Mar Townhomes in Pacific Palisades (illustrative only)" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vista Del Mar Townhomes — Pacific Palisades Rebuild" />
+  <meta name="twitter:description" content="Public project overview for the reconstruction of 17 fire-loss residences in Pacific Palisades. Conceptual rendering, illustrative only." />
+  <meta name="twitter:image" content="https://vistadelmartownhomes.com/assets/vista-del-mar-featured.webp" />
+  <script>document.documentElement.classList.add('js')</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=20261125" />
 </head>
 <body>
   <header class="site-header">
@@ -17,7 +34,8 @@
         <span class="brand-mark">VDM</span>
         <span><strong>Vista Del Mar Townhomes</strong><small>Pacific Palisades</small></span>
       </a>
-      <nav aria-label="Primary">
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span class="nav-toggle__bars" aria-hidden="true"></span></button>
+      <nav id="site-nav" aria-label="Primary">
         <a href="#overview">Overview</a>
         <a href="#reconstruction">Reconstruction</a>
         <a href="#site-plan">Site Plan</a>
@@ -31,7 +49,7 @@
 
   <main id="top">
     <section class="hero hero-full">
-      <img class="hero-bg" src="/assets/vista-del-mar-featured.webp" alt="Conceptual rendering of Vista Del Mar Townhomes in Pacific Palisades" width="1672" height="941" fetchpriority="high" decoding="async" />
+      <img class="hero-bg" src="/assets/vista-del-mar-featured.webp" srcset="/assets/img/vista-del-mar-featured-1200.webp 1200w, /assets/vista-del-mar-featured.webp 1672w" sizes="100vw" alt="Conceptual rendering of Vista Del Mar Townhomes in Pacific Palisades" width="1672" height="941" fetchpriority="high" decoding="async" />
       <div class="hero-overlay"></div>
       <div class="wrap hero-content">
         <p class="eyebrow eyebrow-light">Vista Del Mar at Headland Condominiums</p>
@@ -62,11 +80,11 @@
       <div class="wrap">
         <div class="section-head"><p class="eyebrow">02 — Reconstruction</p><h2>From fire loss to restored residences.</h2><p>The reconstruction is organized around the existing community, original site logic and original architectural documentation. Final residential areas and design details remain subject to current design development and approvals.</p></div>
         <div class="step-grid">
-          <article><button class="step-media-button" type="button" aria-label="Enlarge Existing Condition image" data-image="/assets/site-status.png" data-title="Existing Condition" data-copy="Current fire-loss condition documented prior to reconstruction."><img class="step-media step-media--plan" src="/assets/site-status.png" alt="" width="1448" height="1086" loading="lazy" decoding="async" /></button><span>01</span><h3>Existing Condition</h3><p>Current fire-loss condition documented prior to reconstruction.</p></article>
-          <article><button class="step-media-button" type="button" aria-label="Enlarge Foundation / Footprint image" data-image="/assets/foundation-framing.png" data-title="Foundation / Footprint" data-copy="Reconstruction begins from the established site and building organization, subject to final engineering."><img class="step-media step-media--plan" src="/assets/foundation-framing.png" alt="" width="1448" height="1086" loading="lazy" decoding="async" /></button><span>02</span><h3>Foundation / Footprint</h3><p>Reconstruction begins from the established site and building organization, subject to final engineering.</p></article>
-          <article><button class="step-media-button" type="button" aria-label="Enlarge Structural Framing image" data-image="/assets/structural-framing.png" data-title="Structural Framing" data-copy="Structural systems will be rebuilt under the final approved engineering and permit set."><img class="step-media step-media--plan" src="/assets/structural-framing.png" alt="" width="1448" height="1086" loading="lazy" decoding="async" /></button><span>03</span><h3>Structural Framing</h3><p>Structural systems will be rebuilt under the final approved engineering and permit set.</p></article>
-          <article><button class="step-media-button" type="button" aria-label="Enlarge Exterior Restoration image" data-image="/assets/elevations.png" data-title="Exterior Restoration" data-copy="Exterior reconstruction remains tied to the existing community design language."><img class="step-media step-media--plan" src="/assets/elevations.png" alt="" width="1448" height="1086" loading="lazy" decoding="async" /></button><span>04</span><h3>Exterior Restoration</h3><p>Exterior reconstruction remains tied to the existing community design language.</p></article>
-          <article><button class="step-media-button" type="button" aria-label="Enlarge Completed Townhomes image" data-image="/assets/vista-del-mar-featured.webp" data-title="Completed Townhomes" data-copy="Finished residences will reflect final approved plans, materials and residential layouts."><img class="step-media" src="/assets/vista-del-mar-featured.webp" alt="" width="1672" height="941" loading="lazy" decoding="async" /></button><span>05</span><h3>Completed Townhomes</h3><p>Finished residences will reflect final approved plans, materials and residential layouts.</p></article>
+          <article><button class="step-media-button" type="button" aria-label="Enlarge Existing Condition image" data-image="/assets/img/site-status-1448.webp" data-title="Existing Condition" data-copy="Current fire-loss condition documented prior to reconstruction."><picture><source type="image/webp" srcset="/assets/img/site-status-800.webp 800w" sizes="(min-width:1000px) 220px, (min-width:650px) 45vw, 100vw" /><img class="step-media step-media--plan" src="/assets/site-status.png" alt="" width="1448" height="1086" loading="lazy" decoding="async" /></picture></button><span>01</span><h3>Existing Condition</h3><p>Current fire-loss condition documented prior to reconstruction.</p></article>
+          <article><button class="step-media-button" type="button" aria-label="Enlarge Foundation / Footprint image" data-image="/assets/img/foundation-framing-1448.webp" data-title="Foundation / Footprint" data-copy="Reconstruction begins from the established site and building organization, subject to final engineering."><picture><source type="image/webp" srcset="/assets/img/foundation-framing-800.webp 800w" sizes="(min-width:1000px) 220px, (min-width:650px) 45vw, 100vw" /><img class="step-media step-media--plan" src="/assets/foundation-framing.png" alt="" width="1448" height="1086" loading="lazy" decoding="async" /></picture></button><span>02</span><h3>Foundation / Footprint</h3><p>Reconstruction begins from the established site and building organization, subject to final engineering.</p></article>
+          <article><button class="step-media-button" type="button" aria-label="Enlarge Structural Framing image" data-image="/assets/img/structural-framing-1448.webp" data-title="Structural Framing" data-copy="Structural systems will be rebuilt under the final approved engineering and permit set."><picture><source type="image/webp" srcset="/assets/img/structural-framing-800.webp 800w" sizes="(min-width:1000px) 220px, (min-width:650px) 45vw, 100vw" /><img class="step-media step-media--plan" src="/assets/structural-framing.png" alt="" width="1448" height="1086" loading="lazy" decoding="async" /></picture></button><span>03</span><h3>Structural Framing</h3><p>Structural systems will be rebuilt under the final approved engineering and permit set.</p></article>
+          <article><button class="step-media-button" type="button" aria-label="Enlarge Exterior Restoration image" data-image="/assets/img/elevations-1448.webp" data-title="Exterior Restoration" data-copy="Exterior reconstruction remains tied to the existing community design language."><picture><source type="image/webp" srcset="/assets/img/elevations-800.webp 800w" sizes="(min-width:1000px) 220px, (min-width:650px) 45vw, 100vw" /><img class="step-media step-media--plan" src="/assets/elevations.png" alt="" width="1448" height="1086" loading="lazy" decoding="async" /></picture></button><span>04</span><h3>Exterior Restoration</h3><p>Exterior reconstruction remains tied to the existing community design language.</p></article>
+          <article><button class="step-media-button" type="button" aria-label="Enlarge Completed Townhomes conceptual rendering" data-image="/assets/vista-del-mar-featured.webp" data-caption="Conceptual rendering for illustrative purposes only. Final design subject to review and approvals." data-title="Completed Townhomes" data-copy="Finished residences will reflect final approved plans, materials and residential layouts."><img class="step-media" src="/assets/img/vista-del-mar-featured-800.webp" alt="" width="800" height="450" loading="lazy" decoding="async" /><span class="concept-tag">Conceptual rendering</span></button><span>05</span><h3>Completed Townhomes</h3><p>Finished residences will reflect final approved plans, materials and residential layouts.</p></article>
         </div>
       </div>
     </section>
@@ -76,14 +94,15 @@
         <div class="section-head"><p class="eyebrow">03 — Site Plan</p><h2>Clear site separation: rebuild clusters and intact clusters.</h2></div>
         <figure class="site-plan-figure">
           <div class="plan-image-frame plan-clickmap">
-            <img src="/assets/site-status.png" alt="Vista Del Mar site status and clear site separation plan" width="1448" height="1086" loading="lazy" decoding="async" />
-            <button class="cluster-pin rebuild c1" type="button" data-image="/assets/cluster-plans.png" data-title="Cluster 1 — Rebuild" data-copy="1900–1914 Palisades Drive · 8 fire-loss residences">Cluster 1</button>
-            <button class="cluster-pin rebuild c2" type="button" data-image="/assets/cluster-plans.png" data-title="Cluster 2 — Rebuild" data-copy="1922–1932 Palisades Drive · 6 fire-loss residences">Cluster 2</button>
-            <button class="cluster-pin rebuild c3" type="button" data-image="/assets/cluster-plans.png" data-title="Cluster 3 — Rebuild" data-copy="1916–1920 Palisades Drive · 3 fire-loss residences">Cluster 3</button>
-            <button class="cluster-pin intact c4" type="button" data-image="/assets/site-plan.png" data-title="Cluster 4 — Intact" data-copy="1934–1940 Palisades Drive · existing residences outside the primary rebuild scope">Cluster 4</button>
-            <button class="cluster-pin intact c5" type="button" data-image="/assets/site-plan.png" data-title="Cluster 5 — Intact" data-copy="1942–1948 Palisades Drive · existing residences outside the primary rebuild scope">Cluster 5</button>
+            <picture><source type="image/webp" srcset="/assets/img/site-status-800.webp 800w, /assets/img/site-status-1448.webp 1448w" sizes="(min-width:1200px) 1140px, calc(100vw - 28px)" /><img src="/assets/site-status.png" alt="Vista Del Mar site status and clear site separation plan" width="1448" height="1086" loading="lazy" decoding="async" /></picture>
+            <button class="cluster-pin rebuild c1" type="button" aria-label="Cluster 1 — Rebuild" data-image="/assets/img/cluster-plans-1448.webp" data-title="Cluster 1 — Rebuild" data-copy="1900–1914 Palisades Drive · 8 fire-loss residences" data-caption="Illustrative cluster drawing; unit counts and address labels on this sheet may not match the actual units. See Site Status for the unit-by-unit status."><span class="pin-long">Cluster </span>1</button>
+            <button class="cluster-pin rebuild c2" type="button" aria-label="Cluster 2 — Rebuild" data-image="/assets/img/cluster-plans-1448.webp" data-title="Cluster 2 — Rebuild" data-copy="1922–1932 Palisades Drive · 6 fire-loss residences" data-caption="Illustrative cluster drawing; unit counts and address labels on this sheet may not match the actual units. See Site Status for the unit-by-unit status."><span class="pin-long">Cluster </span>2</button>
+            <button class="cluster-pin rebuild c3" type="button" aria-label="Cluster 3 — Rebuild" data-image="/assets/img/cluster-plans-1448.webp" data-title="Cluster 3 — Rebuild" data-copy="1916–1920 Palisades Drive · 3 fire-loss residences" data-caption="Illustrative cluster drawing; unit counts and address labels on this sheet may not match the actual units. See Site Status for the unit-by-unit status."><span class="pin-long">Cluster </span>3</button>
+            <button class="cluster-pin intact c4" type="button" aria-label="Cluster 4 — Intact" data-image="/assets/img/site-plan-1448.webp" data-title="Cluster 4 — Intact" data-copy="1934–1940 Palisades Drive · existing residences outside the primary rebuild scope"><span class="pin-long">Cluster </span>4</button>
+            <button class="cluster-pin intact c5" type="button" aria-label="Cluster 5 — Intact" data-image="/assets/img/site-plan-1448.webp" data-title="Cluster 5 — Intact" data-copy="1942–1948 Palisades Drive · existing residences outside the primary rebuild scope"><span class="pin-long">Cluster </span>5</button>
           </div>
-          <figcaption>Click a cluster to review its status and plan context. Presentation redraw based on original project records; not a construction document.</figcaption>
+          <figcaption>Tap or click a cluster to review its status and plan context. Presentation redraw based on original project records; not a construction document.</figcaption>
+        <ul class="cluster-list" aria-label="Clusters"><li><button class="cluster-list__btn rebuild" type="button" data-image="/assets/img/cluster-plans-1448.webp" data-title="Cluster 1 — Rebuild" data-copy="1900–1914 Palisades Drive · 8 fire-loss residences" data-caption="Illustrative cluster drawing; unit counts and address labels on this sheet may not match the actual units. See Site Status for the unit-by-unit status.">Cluster 1 — Rebuild</button></li><li><button class="cluster-list__btn rebuild" type="button" data-image="/assets/img/cluster-plans-1448.webp" data-title="Cluster 2 — Rebuild" data-copy="1922–1932 Palisades Drive · 6 fire-loss residences" data-caption="Illustrative cluster drawing; unit counts and address labels on this sheet may not match the actual units. See Site Status for the unit-by-unit status.">Cluster 2 — Rebuild</button></li><li><button class="cluster-list__btn rebuild" type="button" data-image="/assets/img/cluster-plans-1448.webp" data-title="Cluster 3 — Rebuild" data-copy="1916–1920 Palisades Drive · 3 fire-loss residences" data-caption="Illustrative cluster drawing; unit counts and address labels on this sheet may not match the actual units. See Site Status for the unit-by-unit status.">Cluster 3 — Rebuild</button></li><li><button class="cluster-list__btn intact" type="button" data-image="/assets/img/site-plan-1448.webp" data-title="Cluster 4 — Intact" data-copy="1934–1940 Palisades Drive · existing residences outside the primary rebuild scope">Cluster 4 — Intact</button></li><li><button class="cluster-list__btn intact" type="button" data-image="/assets/img/site-plan-1448.webp" data-title="Cluster 5 — Intact" data-copy="1942–1948 Palisades Drive · existing residences outside the primary rebuild scope">Cluster 5 — Intact</button></li></ul>
         </figure>
         <p class="section-note">The site separation identifies 1900–1932 as the 17-unit total-loss reconstruction scope and 1934–1948 as the 8 intact existing units.</p>
       </div>
@@ -102,10 +121,11 @@
     <section class="section" id="unit-mix">
       <div class="wrap">
         <div class="section-head"><p class="eyebrow">05 — Unit Mix</p><h2>Five original unit types across 51,781 total square feet.</h2><p>The table below describes the historical/original building program and is not a statement of final reconstructed sellable area.</p></div>
-        <div class="table-wrap">
+        <p class="swipe-hint" id="swipe-hint" hidden>Swipe to see more →</p>
+        <div class="table-frame" id="table-frame"><div class="table-wrap" id="table-wrap" tabindex="0" role="region" aria-label="Unit mix table, scrollable">
           <table><thead><tr><th>Type</th><th>Units</th><th>Original Living Sq.Ft.</th><th>Garage Sq.Ft.</th><th>Original Total Sq.Ft.</th></tr></thead>
           <tbody><tr><td>A</td><td>3</td><td>2,730</td><td>453</td><td>3,183</td></tr><tr><td>B</td><td>4</td><td>2,197</td><td>479</td><td>2,676</td></tr><tr><td>C</td><td>4</td><td>2,650</td><td>487</td><td>3,137</td></tr><tr><td>D</td><td>4</td><td>2,635</td><td>480</td><td>3,115</td></tr><tr><td>E</td><td>2</td><td>2,773</td><td>487</td><td>3,260</td></tr><tr class="total"><td>Total</td><td>17</td><td>43,664</td><td>8,117</td><td>51,781</td></tr></tbody></table>
-        </div>
+        </div></div>
       </div>
     </section>
 
@@ -113,14 +133,14 @@
       <div class="wrap">
         <div class="section-head"><p class="eyebrow">06 — Documentation</p><h2>Original architectural documentation supports the rebuild.</h2><p>The available historical building-plan package includes site plans, grading, drainage, sewer and water plans, cluster floor plans, roof plans, exterior elevations, sections, foundation plans, framing plans, schedules and details.</p></div>
         <div class="doc-gallery">
-          <button class="doc-card doc-open" type="button" data-image="/assets/site-status.png" data-title="Site Status / Site Plan" data-copy="Clear separation of the 17 total-loss units and 8 intact residences."><img class="doc-image" src="/assets/site-status.png" alt="Vista Del Mar site status plan" width="1448" height="1086" loading="lazy" decoding="async" /><h3>Site Status / Site Plan</h3><p>Clear separation of the 17 total-loss units and 8 intact residences.</p><span class="view-label">View larger</span></button>
-          <button class="doc-card doc-open" type="button" data-image="/assets/cluster-plans.png" data-title="Cluster Plans" data-copy="Original cluster organization and site key plan."><img class="doc-image" src="/assets/cluster-plans.png" alt="Vista Del Mar cluster plans" width="1448" height="1086" loading="lazy" decoding="async" /><h3>Cluster Plans</h3><p>Public presentation of the original cluster organization and site key plan.</p><span class="view-label">View larger</span></button>
-          <button class="doc-card doc-open" type="button" data-image="/assets/unit-floor-plans.png" data-title="Unit Floor Plans" data-copy="Representative floor-plan documentation derived from the historical plan package."><img class="doc-image" src="/assets/unit-floor-plans.png" alt="Vista Del Mar unit floor plans" width="1448" height="1086" loading="lazy" decoding="async" /><h3>Unit Floor Plans</h3><p>Representative floor-plan documentation derived from the historical plan package.</p><span class="view-label">View larger</span></button>
-          <button class="doc-card doc-open" type="button" data-image="/assets/elevations.png" data-title="Elevations" data-copy="Representative exterior elevations showing the established architectural language."><img class="doc-image" src="/assets/elevations.png" alt="Vista Del Mar elevations" width="1448" height="1086" loading="lazy" decoding="async" /><h3>Elevations</h3><p>Representative exterior elevations showing the established architectural language.</p><span class="view-label">View larger</span></button>
-          <button class="doc-card doc-open" type="button" data-image="/assets/foundation-framing.png" data-title="Foundation / Framing" data-copy="Representative structural-plan information for project orientation."><img class="doc-image" src="/assets/foundation-framing.png" alt="Vista Del Mar foundation and framing plans" width="1448" height="1086" loading="lazy" decoding="async" /><h3>Foundation / Framing</h3><p>Representative structural-plan information for project orientation.</p><span class="view-label">View larger</span></button>
-          <button class="doc-card doc-open" type="button" data-image="/assets/details-schedules.png" data-title="Details & Schedules" data-copy="Representative architectural details and schedules from the project record."><img class="doc-image" src="/assets/details-schedules.png" alt="Vista Del Mar details and schedules" width="1448" height="1086" loading="lazy" decoding="async" /><h3>Details & Schedules</h3><p>Representative architectural details and schedules from the project record.</p><span class="view-label">View larger</span></button>
+          <button class="doc-card doc-open" type="button" data-image="/assets/img/site-status-1448.webp" data-title="Site Status / Site Plan" data-copy="Clear separation of the 17 total-loss units and 8 intact residences."><picture><source type="image/webp" srcset="/assets/img/site-status-800.webp 800w" sizes="(min-width:1000px) 380px, (min-width:650px) 48vw, 100vw" /><img class="doc-image" src="/assets/site-status.png" alt="Vista Del Mar site status plan" width="1448" height="1086" loading="lazy" decoding="async" /></picture><h3>Site Status / Site Plan</h3><p>Clear separation of the 17 total-loss units and 8 intact residences.</p><span class="view-label">View larger</span></button>
+          <button class="doc-card doc-open" type="button" data-image="/assets/img/cluster-plans-1448.webp" data-title="Cluster Plans" data-copy="Illustrative cluster drawing and site key plan." data-caption="Illustrative cluster drawing; unit counts and address labels on this sheet may not match the actual units. See Site Status for the unit-by-unit status."><picture><source type="image/webp" srcset="/assets/img/cluster-plans-800.webp 800w" sizes="(min-width:1000px) 380px, (min-width:650px) 48vw, 100vw" /><img class="doc-image" src="/assets/cluster-plans.png" alt="Vista Del Mar cluster plans" width="1448" height="1086" loading="lazy" decoding="async" /></picture><h3>Cluster Plans</h3><p>Illustrative cluster drawing and site key plan.</p><span class="view-label">View larger</span></button>
+          <button class="doc-card doc-open" type="button" data-image="/assets/img/unit-floor-plans-1448.webp" data-title="Unit Floor Plans" data-copy="Illustrative floor-plan concept; final areas are under design review." data-caption="Illustrative floor-plan concept. Areas shown on this sheet are not the historical unit areas listed in the Unit Mix table; final areas are under design review."><picture><source type="image/webp" srcset="/assets/img/unit-floor-plans-800.webp 800w" sizes="(min-width:1000px) 380px, (min-width:650px) 48vw, 100vw" /><img class="doc-image" src="/assets/unit-floor-plans.png" alt="Vista Del Mar unit floor plans" width="1448" height="1086" loading="lazy" decoding="async" /></picture><h3>Unit Floor Plans</h3><p>Illustrative floor-plan concept. Areas shown on this sheet are not the historical unit areas listed in the Unit Mix table; final areas are under design review.</p><span class="view-label">View larger</span></button>
+          <button class="doc-card doc-open" type="button" data-image="/assets/img/elevations-1448.webp" data-title="Elevations" data-copy="Representative exterior elevations showing the established architectural language."><picture><source type="image/webp" srcset="/assets/img/elevations-800.webp 800w" sizes="(min-width:1000px) 380px, (min-width:650px) 48vw, 100vw" /><img class="doc-image" src="/assets/elevations.png" alt="Vista Del Mar elevations" width="1448" height="1086" loading="lazy" decoding="async" /></picture><h3>Elevations</h3><p>Representative exterior elevations showing the established architectural language.</p><span class="view-label">View larger</span></button>
+          <button class="doc-card doc-open" type="button" data-image="/assets/img/foundation-framing-1448.webp" data-title="Foundation / Framing" data-copy="Representative structural-plan information for project orientation."><picture><source type="image/webp" srcset="/assets/img/foundation-framing-800.webp 800w" sizes="(min-width:1000px) 380px, (min-width:650px) 48vw, 100vw" /><img class="doc-image" src="/assets/foundation-framing.png" alt="Vista Del Mar foundation and framing plans" width="1448" height="1086" loading="lazy" decoding="async" /></picture><h3>Foundation / Framing</h3><p>Representative structural-plan information for project orientation.</p><span class="view-label">View larger</span></button>
+          <button class="doc-card doc-open" type="button" data-image="/assets/img/details-schedules-1448.webp" data-title="Details & Schedules" data-copy="Representative architectural details and schedules from the project record."><picture><source type="image/webp" srcset="/assets/img/details-schedules-800.webp 800w" sizes="(min-width:1000px) 380px, (min-width:650px) 48vw, 100vw" /><img class="doc-image" src="/assets/details-schedules.png" alt="Vista Del Mar details and schedules" width="1448" height="1086" loading="lazy" decoding="async" /></picture><h3>Details & Schedules</h3><p>Representative architectural details and schedules from the project record.</p><span class="view-label">View larger</span></button>
         </div>
-        <div class="notice"><strong>Original plan package is available</strong><p>The images above are presentation redraws prepared from historical project records for public website use. They demonstrate the depth of the available documentation without publishing the full plan set. Additional project materials can be provided directly when appropriate.</p></div>
+        <div class="notice"><strong>Original plan package is available</strong><p>Most images above are presentation redraws based on historical project records for public website use; the floor-plan and cluster sheets are illustrative. They demonstrate the depth of the available documentation without publishing the full plan set. Additional project materials can be provided directly when appropriate.</p></div>
       </div>
     </section>
 
@@ -146,16 +166,17 @@
     <div class="plan-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="plan-modal-title">
       <button class="plan-modal__close" type="button" aria-label="Close plan viewer" data-close-modal>×</button>
       <div class="plan-modal__visual" id="plan-modal-visual">
-        <img id="plan-modal-image" src="/assets/site-status.png" alt="" width="1448" height="1086" decoding="async" />
+        <img id="plan-modal-image" alt="" width="1448" height="1086" decoding="async" />
       </div>
       <div class="plan-modal__copy">
         <p class="eyebrow">Project Plan View</p>
         <h2 id="plan-modal-title">Site Plan</h2>
         <p id="plan-modal-copy"></p>
-        <small>Presentation redraw based on historical project records. For orientation only; not a construction document.</small>
+        <a class="plan-modal__full" id="plan-modal-full" href="#" target="_blank" rel="noopener">Open full size in a new tab</a>
+        <small id="plan-modal-caption">Presentation redraw based on historical project records. For orientation only; not a construction document.</small>
       </div>
     </div>
   </div>
-  <script src="script.js"></script>
+  <script src="script.js?v=20261125"></script>
 </body>
 </html>
